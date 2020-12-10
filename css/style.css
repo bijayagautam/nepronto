@@ -1,0 +1,565 @@
+/* IMPORTS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+
+/* GENERAL CSS */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS FOR MAIN HEADER */
+.main-header{
+    background-color: #000203;
+    color: rgb(255, 255, 255);
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: auto 4em;
+    grid-template-areas:  "logo menudrop"
+                          "menu menu";                     
+}
+
+.logo-container{
+    grid-area: logo;
+    padding: 0.5em 0.2em 0 0.5em;
+    font-size: 2em;
+}
+
+.logo-container img{
+   max-width: 50%;
+}
+
+.navbar i{
+    color: rgb(255, 255, 255);
+}
+
+.ham-menu {
+    grid-area: menudrop;
+    text-align: center;
+    padding: 0.5em 0.2em 0 0;
+    font-size: 2em;
+}
+
+.nav-menus{
+    grid-area: menu;
+    text-align: center;
+}
+
+.main-menu a {
+    color: rgb(255, 255, 255);
+    display: block;
+    line-height: 2.7;
+}
+
+.main-menu a:hover {
+    color: #eec305;
+    font-weight: bolder;
+}
+
+/* MAIN BODY CSS */
+.page-message{
+    background-color: #960115;
+    padding: 0.2em;
+    font-family: 'Raleway Dots', cursive;
+    border-radius: 0.1em;
+}
+
+.page-message:hover{
+    background-color: rgb(255, 30, 0);
+    transition: .5s;
+    transform: translateY(-0.1em);
+    cursor: pointer;
+    color: black;
+}
+
+.page-alert{
+    text-align: center;
+    color: #fd105f;
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+#container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.top-leftside {
+    position: absolute;
+    top: 0.5em;
+    left: 0.5em;
+}
+
+.band-profile{
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+}
+
+.section-heading{
+    font-size: 2.3rem;
+    color:  rgb(4, 7, 14);
+}
+
+.band-members{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 2em;
+}
+
+.member-description{
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+.promotion{
+    text-align: center;
+}
+
+.band-promo{
+    max-width: 70%;
+}
+
+.main-content{
+    padding: 1em;
+}
+
+.main-content h2{
+    color: rgb(3, 24, 83);
+}
+
+.music-video{
+   text-align: center;
+   padding: 0 0 2em 0;
+}
+
+.music-video iframe{
+    width: 60vw;
+    height: 30vh;
+}
+
+/* styles for accessories page starts here */
+.section-title{
+    margin-top: 0.7em;
+    text-align: center;
+    color: #073f74;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.all-products {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    row-gap: 1em;
+    column-gap: 1em;
+}
+
+.product{
+    height: 27em;
+    max-width: 20em;
+
+    
+}
+
+.product-image{
+    border: 0.1em solid rgb(241, 241, 241);
+}
+
+.product-image:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.product-details{
+    text-align: left;
+    padding-left: 2em;
+}
+
+.product-name{
+    padding-top: 0.9em;
+    font-weight: lighter;
+}
+
+.product-price{
+    font-weight: bolder;
+    padding: 0.5em 0;
+}
+
+.iphone{
+    max-height: 50%;
+    padding: 2em 5em;
+}
+/* styles for accessories page ends here */
+
+/* styles for News&Media page starts here */
+.presskit-mockup {
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.release-info{
+    /* margin: 0 auto; */
+    padding: 2em;
+    text-align: center;
+}
+
+.release-header{
+    font-weight: bolder;
+}
+
+.release-date{
+    font-weight: lighter;
+}
+
+
+/* styles for News&Media page ends here */
+
+/* styles for Tour page starts here */
+.form-title{
+    margin-top: 1em;
+    text-align: center;
+    color: #f81717;
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+
+.contact-container{
+    padding-top: 2em;
+}
+
+.contact-form{
+    max-width: 30em;
+    min-width: 30em;
+    padding: 1.5em;
+    background-color: rgb(240, 240, 240);
+}
+
+.form-box{
+    margin: 1em;
+}
+
+.form-box label{
+    font-size: 1.2rem;
+    padding-top: 1.5em;
+}
+
+.form-box input{
+    width: 75%;
+    padding: 0.9em;
+    border-radius: 0.2em;
+    border: 0 solid;
+    background-color: rgb(255, 255, 255);
+    margin: 0.5em;
+}
+
+.contact-form textarea {
+    width: 27.5em;
+    height: 15em;
+}
+
+.form-button{
+    width: 80%;
+    border: none;
+    border-radius: 0.2em;
+    background-color: rgb(0, 0, 0);
+    color: rgb(248, 246, 246);
+    padding: 0.5em;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+}
+
+.form-button:hover{
+    background-color: rgb(112, 119, 128);
+    transition: .5s;
+    transform: translateY(-0.1em);
+}
+
+iframe{
+    width: 33em;
+}
+
+.tour-hero{
+    display: flex;
+}
+
+.tour-details{
+    margin: 0 auto;
+}
+
+.tour-header{
+    padding-left: 1em;
+}
+
+.tour-info{
+    margin: 1.5em;
+    display: grid;
+    grid-template-columns: 3em 22em;
+    grid-template-areas:  "date location"
+                          "date venue"
+                          "status status"; 
+}
+
+.tour-date{
+    grid-area: date;
+    padding: 0.5em 0.2em 0 0.5em;
+    font-weight: bolder;
+}
+
+.tour-location{
+    grid-area: location;
+    padding: 0.5em 0.2em 0 0.5em;
+    font-weight: bold;
+}
+
+.tour-venue{
+    grid-area: venue;
+    padding: 0.5em 0.2em 0.5em 0.5em;
+    font-weight: lighter;
+}
+
+.status-button{
+    grid-area: status;
+    letter-spacing: 0.06em;
+    background-color: rgb(148, 148, 148);
+}
+
+.status-button:hover{
+    background-color: rgb(95, 115, 141);
+    transition: .5s;
+    transform: translateY(-0.1em);
+}
+
+/* styles for Tour page ends here */
+
+/* CSS FOR MAIN FOOTER */
+.main-footer{
+    background-color: black;
+    color: white;
+    padding-bottom: 1em;
+    line-height: 1.7rem; 
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas:  "media media media media"
+                          "link link info info"
+                          "about about powered powered";    
+}
+
+.quick-link a{
+    color: white;
+}
+
+.quick-link{
+    grid-area: link;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.social-media{
+    grid-area: media;
+    margin: 1em auto;
+    font-size: 0.8em;
+}
+
+.social-media li{
+    font-size: 2em;
+    display: inline-block;
+    padding: 0 0.5em;
+}
+
+.social-media a{
+    color: white;
+}
+
+.business-info{
+    grid-area: info;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.business-info a{
+    color: white;
+}
+
+.powered-area{
+    grid-area: powered;
+    text-align: center;
+}
+
+.about-band{
+    grid-area: about;
+    margin: 0 auto;
+    font-size: 0.9rem;
+    margin: 0 0.4em 0 0.4em;
+    text-align: center;
+}
+
+.powered-by{
+    max-width: 20vw;
+}
+
+
+/* MEDIA QUERY STARTS HERE */
+@media screen and (min-width: 40em){
+    .logo-container img{
+        max-width: 30%;
+    }
+
+    .powered-by{
+        max-width: 10vw;
+    }
+
+    .music-video iframe{
+        width: 50vw;
+        height: 40vh;
+    }
+
+    .release-header{
+        font-size: 2em;
+        font-weight: bolder;
+    }
+    
+    .release-date{
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+
+    .social-media{
+        font-size: 1.2em;
+    }
+
+}
+
+@media screen and (min-width: 60em){
+    .navbar {
+        display: grid;
+        grid-template-columns: 15em auto;
+        grid-template-areas:  "logo menu"; 
+    }
+
+    .logo-container{
+        grid-area: logo;
+    }
+
+    .logo-container img{
+        max-width: 100%;
+    }
+
+    .logo-container i{
+        font-size: 2.5rem;
+    }
+
+    .ham-menu {
+        display: none;
+    }
+
+    .main-menu{
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 1.3rem;
+    }
+
+    .top-leftside {
+        position: absolute;
+        top: 2em;
+        left: 4em;
+        font-size: 2em;
+    }
+
+    .contact-form{
+        margin: 0 0 5em auto;
+    }
+
+    .concert-venu-map{
+        margin: 0 auto;
+    }
+
+    .contact-container{
+        display: flex;
+    }
+
+    .band-promo{
+        max-width: 30%;
+        padding: 2em;
+    }
+
+    .main-footer{
+        display: grid;
+        padding: 3em 0 1em 0;
+        margin: 0 auto;
+        grid-template-columns: auto auto 20em 15em auto;
+        grid-template-areas:  "link info about media media"
+                              "link info about powered powered";
+   
+    }
+
+    .powered-by{
+        max-width: 5vw;
+    }
+
+    .tour-info{
+        margin: 1.5em;
+        display: grid;
+        grid-template-columns: 3em 20em 20em;
+        grid-template-areas:  "date location status"
+                              "date venue venue"; 
+    }
+
+    .tour-venue{
+        padding: 0 0.2em 0.2em 0.5em;
+    }
+
+    .band-members{
+        gap: 5em;
+    }
+
+    .all-products {
+        column-gap: 5em;
+    }
+
+    .music-video iframe{
+        width: 40vw;
+        height: 45vh;
+    }
+
+    .release-header{
+        font-size: 3em;
+        font-weight: bolder;
+    }
+    
+    .release-date{
+        font-size: 2rem;
+        font-weight: lighter;
+    }
+
+    .social-media{
+        font-size: 0.8em;
+    }
+}
+
+

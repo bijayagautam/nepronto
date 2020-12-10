@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour</title>
+    <link rel="shortcut icon" type="image/png" href="img/favicon-nepronto.png">
+    <meta name="description" content="Welcome to Tour Page.">
+    <meta name="author" content="Bijaya Gautam">
+    <!-- Linked External style -->
+    <link rel="stylesheet" href="css/style.css?v=1.0">
+    <script src="https://kit.fontawesome.com/9e54110656.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <!-- Navigation System -->
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo-container" >
+                <a href="index.html"><img src="img/Nepronto_White logo.svg" alt="nepronto logo"></a>
+            </div>
+
+            <!-- Hamburger menu -->
+            <div class="ham-menu">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            
+            <!-- Main Menu -->
+            <div class="nav-menus">
+                <ul class="main-menu">
+                    <li><a href="index.html">THE BAND</a></li>
+                    <li><a href="newsMedia.html">NEWS & MEDIA</a></li>
+                    <li><a href="tour.html">TOUR</a></li>
+                    <li><a href="accessories.html">ACCESSORIES</a></li>
+                </ul>
+            </div>
+        </nav>   
+    </header>
+
+    <main>
+        <section id="container">
+            <div class="top-leftside">
+                <h1 class="page-message">CONCERT IN YOUR CITY</h1>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <img src="img/concert-crowd.jpg" alt="concert venue">
+            </div>
+        </section>
+
+        <section class="tour-hero"> 
+            <div class="tour-details">
+                <h1 class="tour-header">TOUR DATES - 2021</h1>
+                <article class="tour-info">
+                    <p class="tour-date">JUN 26</p>
+                    <p class="tour-location">TORONTO, ON, CANADA</p>
+                    <p class="tour-venue">Rogers Centre</p>
+                    <button type="button" class="form-button status-button">TICKET AVAILABLE</button>
+                </article>
+    
+                <article class="tour-info">
+                    <p class="tour-date">JUL 03</p>
+                    <p class="tour-location">VANCOUVER, BC, CANADA</p>
+                    <p class="tour-venue">Commodore Ballroom</p>
+                    <button type="button" class="form-button status-button">POSTPONED</button>
+                </article>
+
+                <article class="tour-info">
+                    <p class="tour-date">JUL 10</p>
+                    <p class="tour-location">OTTAWA, ON, CANADA</p>
+                    <p class="tour-venue">Barrymores Music Hall</p>
+                    <button type="button" class="form-button status-button">JOIN THE WAITLIST</button>
+                </article>
+
+                <article class="tour-info">
+                    <p class="tour-date">JUL 24</p>
+                    <p class="tour-location">SACRAMENTO, CA, UNITED STATES</p>
+                    <p class="tour-venue">Aftershock at Discovery Park</p>
+                    <button type="button" class="form-button status-button">TICKET AVAILABLE</button>
+                </article>
+    
+                <article class="tour-info">
+                    <p class="tour-date">JUL 31</p>
+                    <p class="tour-location">SANTIAGO, CHILE</p>
+                    <p class="tour-venue">Estadio Nacional</p>
+                    <button type="button" class="form-button status-button">TICKET AVAILABLE</button>
+                </article>
+            </div>
+        </section>
+
+        <h1 class="form-title">CONTACT FOR EARLY TICKET RESERVATION</h1>
+        <section class="contact-container">
+            <form action="mailto:test@test.com" method="get" class="contact-form">
+
+                <div class="form-box">
+                  <label for="name">First Name</label> <br>
+                  <input type="text" name="name" id="firstname" required>
+                </div>
+
+                <div class="form-box">
+                    <label for="name">Last Name</label><br>
+                    <input type="text" name="name" id="lastname" required>
+                </div>
+
+                <div class="form-box">
+                  <label for="email">Email Address</label><br>
+                  <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="form-box">
+                    <label for="phone">Phone Number</label><br>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                </div>
+
+                <div class="form-box">
+                    <label for="tickets">Number of Tickets</label>
+                    <select id="tickets" name="ticketsNum" form="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4+</option>
+                    </select>
+                </div>
+
+                <div class="form-box">
+                    <label for="textarea">Message</label><br>
+                    <textarea name="textarea" rows="1" cols="10" id="textarea" required></textarea>
+                </div>
+
+                <div><br>
+                  <input type="submit" value="submit" class="form-button">
+                </div>
+            </form>
+
+            <div class="concert-venu-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.3068576376613!2d-79.39133238422282!3d43.64178366118641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d7b66a4a51%3A0xe210b2f6fe0b1405!2sRogers%20Centre!5e0!3m2!1sen!2sca!4v1606959964893!5m2!1sen!2sca" height="745" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <section class="quick-link">
+            <ul>
+                <li><a href="index.html">THE BAND</a></li>
+                <li><a href="newsMedia.html">NEWS & MEDIA</a></li>
+                <li><a href="tour.html">TOUR</a></li>
+                <li><a href="accessories.html">ACCESSORIES</a></li>
+            </ul>
+        </section>
+
+        <section class="social-media">
+            <ul>
+                <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                <li><a href="#"><i class="fab fa-snapchat"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>                              
+                <li><a href="#"><i class="fab fa-facebook-f" ></i></a></li>                              
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </section>
+
+        <section class="business-info">
+            <ul>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Credits</a></li>
+                <li><a href="#">&copy; 2020 NEPRONTO, All rights reserved.</a></li>
+            </ul>
+        </section>
+
+        <section class="about-band">
+            <p>"Nepronto is a Nepalese Canadian Rock Band from Toronto, Ontario. The band’s lineup consists of active member Rikesh Tuladhar (vocals), Ayush Bahadur Singh (lead guitar), Bijaya Gautam (drums), Anish Rijal 
+                (bass guitar) and Sushant Amatya (songwriter, guitar) was the former member of the band."</p>
+        </section>
+
+        <section class="powered-area">
+            <ul>
+                <li>Powered by:</li>
+                <li><a href="http://onetnine.com" target="_blank" rel="noopener noreferrer"> <img src="img/oneTnine logo_blueOrange_responsive.svg" alt="onetnine logo" class="powered-by"></a></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
