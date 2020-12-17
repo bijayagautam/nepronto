@@ -77,6 +77,16 @@ p{
     font-weight: bolder;
 }
 
+.top-navigation{
+    text-align: right;
+}
+
+.top-navigation i{
+    color: #026fad;
+    padding: 1.5em;
+    font-weight: lighter;
+}
+
 /* MAIN BODY CSS */
 .page-message{
     background-color: #960115;
@@ -128,6 +138,10 @@ p{
     flex-flow: row wrap;
     justify-content: space-evenly;
     gap: 2em;
+}
+
+.member-container img:hover{
+    animation: band-memb-img 1s;
 }
 
 .member-name{
@@ -251,6 +265,9 @@ p{
     color: rgb(0, 132, 255);
 }
 
+.vinyl-record:hover{
+    animation: move 20s;
+}
 
 /* styles for News&Media page ends here */
 
@@ -473,6 +490,10 @@ iframe{
         font-size: 1.3rem;
     }
 
+    .top-navigation i{
+        font-size: 1.2rem;
+    }
+
 }
 
 @media screen and (min-width: 60em){
@@ -584,6 +605,36 @@ iframe{
     .vinyl-price{
         font-size: 1.4rem;
     }
+
+    .top-navigation i{
+        font-size: 1.4rem;
+    }
+
 }
 
+/* KEYFRAME ANIMATION STARTS HERE */
+@keyframes band-memb-img {
+    /* ANIMATION FOR BAND MEMBER IMAGE */
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-2em);
+	}
+
+	80% {
+		transform: translateY(-1em);
+    }
+}
+
+@keyframes move {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
 
