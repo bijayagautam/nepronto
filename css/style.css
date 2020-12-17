@@ -130,9 +130,15 @@ p{
     gap: 2em;
 }
 
+.member-name{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
 .member-description{
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
+    color: #0907a0;
 }
 
 .promotion{
@@ -216,14 +222,14 @@ p{
 
 /* styles for News&Media page starts here */
 .presskit-mockup {
-    max-width: 60%;
+    max-width: 75%;
     text-align: center;
     margin: 0 auto;
 }
 
 .release-info{
     /* margin: 0 auto; */
-    padding: 2em;
+    padding-top: 2em;
     text-align: center;
 }
 
@@ -233,6 +239,16 @@ p{
 
 .release-date{
     font-weight: lighter;
+    padding-bottom: 2em;
+}
+
+.release-info a{
+    margin-top: 3em;
+
+}
+
+.vinyl-price{
+    color: rgb(0, 132, 255);
 }
 
 
@@ -453,6 +469,10 @@ iframe{
         font-size: 1.2em;
     }
 
+    .vinyl-price{
+        font-size: 1.3rem;
+    }
+
 }
 
 @media screen and (min-width: 60em){
@@ -559,6 +579,10 @@ iframe{
 
     .social-media{
         font-size: 0.8em;
+    }
+
+    .vinyl-price{
+        font-size: 1.4rem;
     }
 }
 
